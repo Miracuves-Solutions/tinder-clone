@@ -1,314 +1,119 @@
-# Tinder Clone — White-Label Solution by Miracuves
+# Tinder Clone — White-Label Dating & Social Discovery Platform by Miracuves
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxingle.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/tinder-clone/)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/tinder-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/tinder-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXIngle** is a production-ready, white-label Tinder clone: a complete dating & social-discovery platform with profiles, swipes, chat, and admin console — delivered with **100% source code ownership** in **6 working days**.
+
+> 💕 **See it running before you talk to anyone.** Live dater app, match console, and admin panel — demo credentials are printed on the [solution page](https://miracuves.com/tinder-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxingle.mimeld.com](https://mxingle.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/tinder-clone/#demo) | Users, content, plans, analytics |
+| 📱 Dater App | [mas.mimeld.com](https://mas.mimeld.com) | Browse, swipe, match, chat, video date |
+| 🌐 Web Portal | [mxingle.mimeld.com](https://mxingle.mimeld.com) | Full dating experience in browser |
+| 🛡️ Trust Console | [Solution page → Demo](https://miracuves.com/tinder-clone#demo) | Verifications, reports, takedowns |
+| 🛠️ Admin Dashboard | [Solution page → Demo](https://miracuves.com/tinder-clone#demo) | Users, monetization, analytics |
 
-Demo credentials: [miracuves.com/tinder-clone -> Demo section](https://miracuves.com/tinder-clone/#demo)
-
-## What Makes This Tinder Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch platform |
-| Agencies | White-label |
+Demo credentials for all environments: **[miracuves.com/tinder-clone → Demo section](https://miracuves.com/tinder-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Tinder Clone Different
 
-1. User opens app
-2. Selects service
-3. Completes
-4. Payment
-5. Confirmation
+Most dating scripts stop at "swipe + match." This platform ships with the features that actually run a dating *business*:
 
----
+- **Smart Match Algorithm** — vector embeddings + behavioural features give better daily picks — what Hinge and Bumble charge up to $40/mo for
+- **Video Date Built-In** — 
+- **Trust & Safety Stack** — WebRTC 1-on-1 video dates with safety features (blur, hold-to-report) — what Bumble pioneered
+- **Tiered Subscriptions** — prompts for better photos, ranked by likelihood of right-swipes — what Hinge uses to drive upgrades
+- **AI Photo Scoring** — free / plus / premium with boosts, see-who-likes-you, unlimited swipes — same LTV mechanics Tinder runs
 
-## Core Features
+## 📦 Core Features
 
-### User App
-- Profile setup
-- Swipe matching
-- Chat
-- Notifications
+**Dater:** profile & photos · swipe deck · match list · chat · video date · share location · premium boosts · referrals
 
-### Admin
-- Moderation
-- Revenue
+**Trust & Safety:** photo/selfie verification · background checks · user reports · AI moderation · takedown workflow · appeals
 
----
+**Admin:** user management · monetization controls · A/B testing · pricing · analytics
 
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Smart automation
-- **AI Matching** - Smart compatibility scores
-- **AI Moderation** - Photo & content safety
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| User App | Swipe,chat |
-| Admin Panel | Moderate,analytics |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Dater App<br/>Flutter]
+    B[Web Portal<br/>Responsive]
+    W[Trust Console]
+    AD[Admin Dashboard]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> ML[ML<br/>Match Ranker]
+    ML --> A
+    G --> V[WebRTC<br/>Video Date]
+    V --> A
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps (Android + iOS) · Node.js backend · MongoDB · Redis for match queue · WebRTC for video · Stripe for subscriptions · Stripe, Apple/Google in-app purchases (IAP), regional gateways
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$3,099**, transparent on the [solution page](https://miracuves.com/tinder-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium features
-- Premium subscriptions
-- Boosts & super likes
-- In-app purchases
+Custom dating platforms run $80k–$350k and 5–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for growth marketing and trust & safety ops.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Tinder Clone — Full Solution Page](https://miracuves.com/tinder-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Dating App Cost in 2026?](https://miracuves.com/tinder-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Tinder Clone Script in 2026](https://miracuves.com/tinder-clone/blog/) features, pricing & launch guide
+- 🧠 [Trust & Safety: The Decisive Moat in Dating Apps](https://miracuves.com/tinder-clone/blog/) verification, moderation, brand
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/tinder-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
 
----
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
 
-## What's Included
-
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$3,099** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
-
-**What is included:**
-
-- User App
-- Admin Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
-
----
-**Pricing:** from **$4,899** — transparent on the [solution page](https://miracuves.com/tinder-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## Why Not Build From Scratch?
+### ⚠️ Note on This Repository
 
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$3,099 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/tinder-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+
+*Keywords: tinder clone, tinder clone script, dating app, match platform, white label Tinder, video date, Flutter dating app, Node.js dating*
 
 ---
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital
-- Dating
-- Social discovery
-- Friendship
-- Professional networking
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**Cost?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/tinder-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your dating app platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/tinder-clone](https://miracuves.com/tinder-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: tinder clone, tinder script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Tinder Clone
+{MX_NAME}         MXIngle
+{CATEGORY}        Dating & Social Discovery Platform
+{DEMO_WEB}        mxingle.mimeld.com
+{PRICE}           $3,099
+{SLUG}            tinder-clone
+{SOLUTION_URL}    https://miracuves.com/tinder-clone/
+{VERTICAL}        dating
+
+See /tmp/verticals/dating.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
