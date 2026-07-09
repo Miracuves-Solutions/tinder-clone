@@ -29,10 +29,10 @@ Demo credentials for all environments: **[miracuves.com/tinder-clone → Demo se
 Most dating scripts stop at "swipe + match." This platform ships with the features that actually run a dating *business*:
 
 - **Smart Match Algorithm** — vector embeddings + behavioural features give better daily picks — what Hinge and Bumble charge up to $40/mo for
-- **Video Date Built-In** — 
-- **Trust & Safety Stack** — WebRTC 1-on-1 video dates with safety features (blur, hold-to-report) — what Bumble pioneered
-- **Tiered Subscriptions** — prompts for better photos, ranked by likelihood of right-swipes — what Hinge uses to drive upgrades
-- **AI Photo Scoring** — free / plus / premium with boosts, see-who-likes-you, unlimited swipes — same LTV mechanics Tinder runs
+- **Video Date Built-In** — WebRTC 1-on-1 video dates with safety features (blur, hold-to-report) — what Bumble pioneered
+- **Trust & Safety Stack** — photo/selfie/ID verification, AI moderation, user reports — production-grade from day one
+- **Tiered Subscriptions** — free / plus / premium with boosts, see-who-likes-you, unlimited swipes — same LTV mechanics Tinder runs
+- **AI Photo Scoring** — prompts for better photos, ranked by likelihood of right-swipes — what Hinge uses to drive upgrades
 
 ## 📦 Core Features
 
