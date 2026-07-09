@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$3,099**, transparent on the [solution page](https://miracuves.com/tinder-clone/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$4,899**, transparent on the [solution page](https://miracuves.com/tinder-clone/#pricing) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -109,7 +109,7 @@ TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 {MX_NAME}         MXIngle
 {CATEGORY}        Dating & Social Discovery Platform
 {DEMO_WEB}        mxingle.mimeld.com
-{PRICE}           $3,099
+{PRICE}           $4,899
 {SLUG}            tinder-clone
 {SOLUTION_URL}    https://miracuves.com/tinder-clone/
 {VERTICAL}        dating
